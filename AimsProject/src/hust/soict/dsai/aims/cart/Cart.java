@@ -1,3 +1,6 @@
+package hust.soict.dsai.aims.cart;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 public class Cart {
     public int qtyOrdered;
     public static final int Max_numbers_ordered = 20;
@@ -74,5 +77,5 @@ public class Cart {
             }
         }
         System.out.println("No matching DVD found.");
-}
+    }
 }
