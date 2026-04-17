@@ -37,8 +37,8 @@ public class Cart {
         System.out.println("The list has been added"); 
     }
     public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2){
-        addDigitalVideoDisc(dvd1);
         addDigitalVideoDisc(dvd2);
+        addDigitalVideoDisc(dvd1);
         System.out.println("dvds have been added");
     }
     public float totalCost(){
