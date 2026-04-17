@@ -1,8 +1,10 @@
-public class Aims {
+public class CartTest {
     public static void main(String[] args) {
+        Cart cart = new Cart();
         DigitalVideoDisc dvd1 = new DigitalVideoDisc("Jungle");
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Cinderella");
-        System.out.println(dvd1.getId()); 
-        System.out.println(dvd2.getId()); 
+        cart.addDigitalVideoDisc(dvd1);
+        cart.addDigitalVideoDisc(dvd2);
+        cart.print();
     }
 }

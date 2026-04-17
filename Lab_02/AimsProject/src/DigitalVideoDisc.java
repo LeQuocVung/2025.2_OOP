@@ -59,4 +59,8 @@ public class DigitalVideoDisc {
     public int getId() {
         return id;
     }
+    @Override
+    public String toString(){
+        return "DVD - " + title + " - " + category + " - " + director + " - " + length + " - " + cost + " $";
+    }
 }

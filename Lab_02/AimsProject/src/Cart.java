@@ -48,5 +48,13 @@ public class Cart {
         }
         return sum;
     }
-    
+    public void print(){
+        System.out.println("**********************cart********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println((i+1)+ "." + itemOrdered[i].toString());
+        }
+        System.out.println("Total cost: " + totalCost() + "$");
+        System.out.println("***********************************************");
+    }
 }
