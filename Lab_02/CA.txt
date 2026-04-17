@@ -1,0 +1,30 @@
+3.3 Lệnh Logic
+- AND, OR, NOT (dùng lệnh XOR với 1), XOR, <<SLL, >>SRL
+- Tốc độ nhanh: phép toán logic nhanh hơn phép toán số học. VD: mã hóa movie, xử lý network 
+	+ đối với AND: A and 0 = 0, A and 1 = A => xóa bit
+	+ đối với OR:  A or 0 = A, A or 1 = 1   => bật bit
+	+ đối với XOR: A xor 0 = X, A xor 1 = A*=> so sánh, mã hóa	
+- Mở rộng dấu: s1 = -2: (1111111....1//nhân bản ra thêm các bit dấu 110) (andi là mở rộng dấu)
+- Dịch trái phải = nhân/chia 2^k
+	+ sll, slli :s3, s2, 4 # s3 = s2 << 4, s3 = s2 *s^4
+	+ ....
+	+ sra
+3.4 Cấu trúc điều khiển:
+- ble, bge, blt, bne, beq
+- địa chỉ thanh ghi, nhãn,... đều là hằng số
+- jal: nhảy xa hơn, có thể nhảy ra ngoài phạm vi, còn beq, blt,.. thì không
+- beq trong switch-case dùng để thoát ctrinh.
+- vòng lặp:
+	+ while: thêm điều kiện để nhảy ngược lại chương trình, lệnh kiểm tra thường nằm ở cuối
+	+ thi tối đa 1 for + 1 if
+3.5 Mảng
+- không có kích thước của mảng, chỉ có điểm đầu của mảng
+- lw,sw
+- A[0] địa chỉ cơ sở
+- địa chỉ A[i] = A[0] + 4*i
+- Ký tự ASCII = 1 byte
+- lb rd 0(rs1) -> rd = 0xffffff87 (do mở rộng dấu (đầu 8 là âm)/ 0x00000035)
+- sb chỉ có 1 trường hợp
+- lh, sh: halfword: nạp/lưu 2 byte
+3.6 Chương trình con
+- 
