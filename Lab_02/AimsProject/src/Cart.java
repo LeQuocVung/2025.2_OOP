@@ -30,6 +30,17 @@ public class Cart {
             System.out.println("The cart is almost full");
         }
     }
+    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList){
+        for (DigitalVideoDisc dvdList1 : dvdList) {
+            addDigitalVideoDisc(dvdList1);
+        }
+        System.out.println("The list has been added"); 
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2){
+        addDigitalVideoDisc(dvd1);
+        addDigitalVideoDisc(dvd2);
+        System.out.println("dvds have been added");
+    }
     public float totalCost(){
         float sum = 0;
         for(int i =0; i < qtyOrdered; i++){
