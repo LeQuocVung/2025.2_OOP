@@ -37,8 +37,8 @@ public class Cart {
         System.out.println("The list has been added"); 
     }
     public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2){
-        addDigitalVideoDisc(dvd2);
         addDigitalVideoDisc(dvd1);
+        addDigitalVideoDisc(dvd2);
         System.out.println("dvds have been added");
     }
     public float totalCost(){
@@ -47,5 +47,14 @@ public class Cart {
             sum += itemOrdered[i].getCost();
         }
         return sum;
+    }
+    public void print(){
+        System.out.println("**********************cart********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println((i+1)+ "." + itemOrdered[i].toString());
+        }
+        System.out.println("Total cost: " + totalCost() + "$");
+        System.out.println("***********************************************");
     }
 }
