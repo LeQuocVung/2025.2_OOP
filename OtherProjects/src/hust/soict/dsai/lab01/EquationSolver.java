@@ -1,3 +1,5 @@
+package hust.soict.dsai.lab01;
+
 import java.util.Scanner;
 public class EquationSolver{
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package hust.soict.dsai.lab01;
+
 import java.util.Scanner;
 public class DoubleToString2_2_5 {
 	public static void main(String[] args) {
