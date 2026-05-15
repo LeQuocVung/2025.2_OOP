@@ -1,31 +1,35 @@
-package hust.soict.dsai.aims.disc;
+package hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc {
-    private int id;
-    private String title;
-    private String category;
+public class DigitalVideoDisc extends Disc {
     private String director;
     private int length;
-    private float cost;
     private static int nbDigitalVideoDiscs = 0;
-    
+    public DigitalVideoDisc(int id, String title, String category, int length){
+        super();
+        this.title = title;
+    }
+    @Override
     public String getTitle() {
         return title;
     }
+    @Override
     public String getCategory() {
         return category;
     }
+    @Override
     public String getDirector() {
         return director;
     }
+    @Override
     public int getLength() {
         return length;
     }
+    @Override
     public float getCost() {
         return cost;
     }
     public DigitalVideoDisc(String title) {
-        this.title = title;
+        super.title = title;
         nbDigitalVideoDiscs++;
         this.id = nbDigitalVideoDiscs;
     }
@@ -54,10 +58,12 @@ public class DigitalVideoDisc {
         this.id = nbDigitalVideoDiscs;
     }
 
+    @Override
     public void setTitle(String title) {
         this.title = title;
     }
 
+    @Override
     public int getId() {
         return id;
     }
