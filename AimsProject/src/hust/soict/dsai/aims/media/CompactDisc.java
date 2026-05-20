@@ -4,10 +4,12 @@ import java.util.ArrayList;
 
 public class CompactDisc extends Disc implements Playable {
     private String artist;
-    private ArrayList<Track> tracks = new ArrayList<>();
-    public CompactDisc(){
-        super();
+    private final ArrayList<Track> tracks = new ArrayList<>();
+    public CompactDisc(String title, String category, String director, float cost, String artist) {
+        super(title, category, director, cost);
+        this.artist = artist;
     }
+
 
     public String getArtist() {
         return artist;

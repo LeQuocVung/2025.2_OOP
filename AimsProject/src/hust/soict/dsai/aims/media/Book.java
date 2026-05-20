@@ -10,8 +10,9 @@ public class Book extends Media {
     public Book() {
         super();
     }
-    
-    
+    public Book(String title, String category, float cost) {
+        super(title, category, cost);
+    }
     @Override
     public String getTitle() {
         return title;
