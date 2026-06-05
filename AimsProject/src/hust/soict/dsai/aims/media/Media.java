@@ -49,14 +49,10 @@ public abstract class Media {
     }
     @Override
     public boolean equals(Object o) {
-        if (o instanceof Media) {
-            try {
-                return ((Media) o).getTitle().equals(this.title);
-            } catch (NullPointerException e) {
-                return false;
-            }
-        }
-        return false;
+        if (this == o) return true;
+        if (!(o instanceof Media)) return false;
+        Media media = (Media) o;
+        return java.util.Objects.equals(this.title, media.getTitle());
     }
 
     public boolean isMatch(String title) {
